@@ -5,14 +5,18 @@
     <script type="text/javascript">
         $(document).ready(function(){
             var myOptions = {
-                center: new google.maps.LatLng(54, -2),
+                center: new google.maps.LatLng(17.3667, 78.4667),
                 zoom: 6,
                 mapTypeId: google.maps.MapTypeId.ROADMAP
             };
 
             var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
 
-            var addressArray = new Array("41 Green Ln, Handsworth, Birmingham, West Midlands B21 0DE, UK","BT27 4SB","Norwich");
+            var addressArray = new Array("International Institute of Information Technology Gachibowli, Hyderabad 500 032 Andhra Pradesh, INDIA",
+                                         "NIMHANS Convention Centre, Hosur Main Road, Hombegowda Nagar, Bangalore, Karnataka",
+                                         "Kolkata",
+                                         "Delhi",
+                                         "Chennai");
             var geocoder = new google.maps.Geocoder();
 
             for (var i = 0; i < addressArray.length; i++) {
